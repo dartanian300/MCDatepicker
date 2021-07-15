@@ -158,10 +158,6 @@ export const applyListeners = (calendarNodes) => {
 		else if (target == 'year') {
 			currentYearSelect.focus();
 		}
-
-		if (autoClose && store.preview.target === viewLayers[0]) {
-			updatePickedDateValue(activeInstance, calendarStates);
-		}
 	});
 
 	calendar.addEventListener(SET_DATE, (e) => {
